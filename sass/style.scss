@@ -2,8 +2,12 @@ $main-color: #fe5a1a;
 $footer-cilor:#222222;
 $nav-menu-color:#777777;
 $add-color:#e7e7e7;
+
 $logo-color: white;
 $nav-bacground-color: white;
+
+$header-slidebar-color: #aabff8;
+$title-name_color:white;
 
 %flex-column{
     display: flex;
@@ -173,6 +177,49 @@ body{
 // finishing nav icons
 
 
+// Starting slidebar
+.slidebar{
+    height: 960px;
+    background-color: $header-slidebar-color;
+}
+.titles-product{
+width: 430px;
+height: 350px;
+}
+.title-name{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 60px;
+}
+.title-name_color{
+    color: $title-name_color;
+
+}
+.title-prise{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 40px;
+}
+.title-prise_color{
+    color: $title-name_color;
+}
+.description-text{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.description-text_color{
+    color: $title-name_color;
+}
+.buy-button{
+
+}
+.buy-button-img{
+
+}
+.dots{
+
+}
+.button-navigation{
+
+}
+// finishing slidebar
 
 // Fihishing header
 .content{

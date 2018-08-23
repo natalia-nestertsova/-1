@@ -130,3 +130,31 @@ body {
 
 .icon-settings {
   background: url(../photo/icons-settings-light-gray.png); }
+
+.slidebar {
+  height: 960px;
+  background-color: #aabff8; }
+
+.titles-product {
+  width: 430px;
+  height: 350px; }
+
+.title-name {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 60px; }
+
+.title-name_color {
+  color: white; }
+
+.title-prise {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 40px; }
+
+.title-prise_color {
+  color: white; }
+
+.description-text {
+  font-family: 'Source Sans Pro', sans-serif; }
+
+.description-text_color {
+  color: white; }
