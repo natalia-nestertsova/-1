@@ -1,16 +1,29 @@
-body {
-  margin: 0%; }
-
 .header {
   display: flex;
   flex-direction: column; }
 
+.menu, .nav-menu, .nav, .nav-item_position, .nav-item-down-img-position, .adding-nav-icon {
+  display: flex;
+  flex-direction: row; }
+
+body {
+  margin: 0%; }
+
+.menu {
+  justify-content: space-between;
+  height: 80px;
+  width: 100%;
+  background-color: white; }
+
 .logo {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 40pt;
+  font-weight: 800; }
+
+.logo_color {
   color: white; }
 
-.logo_view {
+.logo-container_view {
   width: 250px;
   height: 80px;
   background-color: #fe5a1a; }
@@ -18,14 +31,102 @@ body {
 .logo-text_position {
   margin: 0%;
   display: flex;
-  align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  align-items: center; }
+
+.logo-link {
+  text-decoration: none; }
+
+.nav-menu {
+  height: 80px;
+  justify-content: center;
+  align-items: center; }
 
 .nav {
-  marker: none;
-  display: inline; }
+  justify-content: center;
+  align-items: center; }
 
 .nav-item {
+  list-style-type: none;
   font-family: 'Source Sans Pro', sans-serif;
-  text-transform: uppercase;
-  color: 777777; }
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.nav-item_position {
+  margin-right: 35px; }
+
+.nav-item_nav-color {
+  color: #777777; }
+
+.nav-item_nav-color:active {
+  color: #222222; }
+
+.nav-item_nav-color:focus {
+  color: #222222; }
+
+.nav-item_nav-color:hover {
+  color: #222222; }
+
+.nav-item_nav-color:focus-within {
+  color: #222222; }
+
+.nav-item_main-color {
+  color: #fe5a1a; }
+
+.nav-item_main-color:active {
+  color: #222222; }
+
+.nav-item_main-color:focus {
+  color: #222222; }
+
+.nav-item_main-color:focus-within {
+  color: #222222; }
+
+.nav-item_main-color:hover {
+  color: #222222; }
+
+.nav-item-down-img-size {
+  width: 10px;
+  height: 10px; }
+
+.nav-item-down-img-position {
+  justify-content: center;
+  margin-left: 20px;
+  margin-top: 5px; }
+
+.nav-item-down-img {
+  background-image: url(../photo/iconsDown.png); }
+
+.nav-item-down-img:active {
+  background-image: url(../photo/iconsDownActive.png); }
+
+.nav-item-down-img:hover {
+  background-image: url(../photo/iconsDownActive.png); }
+
+.nav-item-down-img:focus-within {
+  background-image: url(../photo/iconsDownActive.png); }
+
+.nav-item-down-img:focus {
+  background-image: url(../photo/iconsDownActive.png);
+  border: #fe5a1a; }
+
+.adding-nav-icon {
+  align-items: center;
+  right: 15px; }
+
+.nav-icon {
+  height: 25px;
+  width: 25px;
+  margin-right: 15px; }
+
+.icon-search {
+  background: url(../photo/icons-search-red.png); }
+
+.icon-pearson {
+  background: url(../photo/icons-person-red.png); }
+
+.icon-basket {
+  background: url(../photo/icons-basket-red.png); }
+
+.icon-settings {
+  background: url(../photo/icons-settings-light-gray.png); }
