@@ -1,8 +1,8 @@
-.header {
+.header, .titles-product_position, .buy-button_position, .content, .addition-inform-item, .footer-logo, .form-footer {
   display: flex;
   flex-direction: column; }
 
-.menu, .nav-menu, .nav, .nav-item_position, .nav-item-down-img-position, .adding-nav-icon {
+.menu, .nav-menu, .nav, .nav-item_position, .nav-item-down-img-position, .adding-nav-icon, .slidebar_content-align, .slider-navigation, .product, .product-items, .addition-inform, .footer, .form {
   display: flex;
   flex-direction: row; }
 
@@ -48,113 +48,303 @@ body {
 
 .nav-item {
   list-style-type: none;
+  font-weight: 700; }
+
+.nav-item_view {
+  text-transform: uppercase;
   font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 700;
-  text-transform: uppercase; }
+  cursor: pointer; }
 
 .nav-item_position {
   margin-right: 35px; }
 
 .nav-item_nav-color {
   color: #777777; }
-
-.nav-item_nav-color:active {
-  color: #222222; }
-
-.nav-item_nav-color:focus {
-  color: #222222; }
-
-.nav-item_nav-color:hover {
-  color: #222222; }
-
-.nav-item_nav-color:focus-within {
-  color: #222222; }
+  .nav-item_nav-color:hover {
+    color: #161616; }
+  .nav-item_nav-color:focus {
+    color: #161616; }
+  .nav-item_nav-color:active {
+    color: #161616; }
+  .nav-item_nav-color:focus-within {
+    color: #161616; }
 
 .nav-item_main-color {
   color: #fe5a1a; }
+  .nav-item_main-color:hover {
+    color: #161616; }
+  .nav-item_main-color:focus {
+    color: #161616; }
+  .nav-item_main-color:active {
+    color: #161616; }
+  .nav-item_main-color:focus-within {
+    color: #161616; }
 
-.nav-item_main-color:active {
-  color: #222222; }
-
-.nav-item_main-color:focus {
-  color: #222222; }
-
-.nav-item_main-color:focus-within {
-  color: #222222; }
-
-.nav-item_main-color:hover {
-  color: #222222; }
-
-.nav-item-down-img-size {
-  width: 10px;
-  height: 10px; }
+.nav-item-down-img-color {
+  color: #777777; }
+  .nav-item-down-img-color:hover {
+    color: #333333; }
 
 .nav-item-down-img-position {
   justify-content: center;
   margin-left: 20px;
-  margin-top: 5px; }
-
-.nav-item-down-img {
-  background-image: url(../photo/iconsDown.png); }
-
-.nav-item-down-img:active {
-  background-image: url(../photo/iconsDownActive.png); }
-
-.nav-item-down-img:hover {
-  background-image: url(../photo/iconsDownActive.png); }
-
-.nav-item-down-img:focus-within {
-  background-image: url(../photo/iconsDownActive.png); }
-
-.nav-item-down-img:focus {
-  background-image: url(../photo/iconsDownActive.png);
-  border: #fe5a1a; }
+  margin-top: 3px; }
 
 .adding-nav-icon {
   align-items: center;
   right: 15px; }
 
 .nav-icon {
-  height: 25px;
-  width: 25px;
-  margin-right: 15px; }
+  height: 20px;
+  width: 23px;
+  margin-right: 15px;
+  cursor: pointer; }
 
-.icon-search {
-  background: url(../photo/icons-search-red.png); }
-
-.icon-pearson {
-  background: url(../photo/icons-person-red.png); }
-
-.icon-basket {
-  background: url(../photo/icons-basket-red.png); }
-
-.icon-settings {
-  background: url(../photo/icons-settings-light-gray.png); }
+.nav-icon-color {
+  color: #fe5a1a; }
+  .nav-icon-color:hover {
+    color: #333333; }
 
 .slidebar {
   height: 960px;
-  background-color: #aabff8; }
+  background-color: #aabff8;
+  background-image: url(../photo/WirelessSpeaker_Bottle.png);
+  background-repeat: no-repeat;
+  background-position: 70% center; }
+
+.slidebar_content-align {
+  justify-content: space-between; }
 
 .titles-product {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white; }
+
+.titles-product_size {
   width: 430px;
-  height: 350px; }
+  margin-left: 50px; }
+
+.titles-product_position {
+  justify-content: center; }
 
 .title-name {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 60px; }
-
-.title-name_color {
-  color: white; }
+  font-size: 60px;
+  line-height: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px; }
 
 .title-prise {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 40px; }
+  font-size: 55px;
+  margin-top: 10px;
+  margin-bottom: 10px; }
 
-.title-prise_color {
+.buy-button {
+  border: 4px solid;
+  border-radius: 50px;
+  border-color: white;
+  background-color: #aabff8;
+  cursor: pointer; }
+
+.buy-button_position {
+  justify-content: center;
+  align-items: center; }
+
+.buy-button_size {
+  height: 100px;
+  width: 100px; }
+
+.buy-button-img {
+  font-size: 30pt;
+  color: white; }
+  .buy-button-img:hover {
+    color: #333333; }
+  .buy-button-img:focus {
+    color: #333333; }
+
+.slider-navigation {
+  align-items: flex-end;
   color: white; }
 
-.description-text {
-  font-family: 'Source Sans Pro', sans-serif; }
+.slider-navigation_size {
+  width: 200px;
+  margin-bottom: 80px; }
 
-.description-text_color {
+.slider-navigation-dots {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 60px;
+  margin-right: 4px; }
+  .slider-navigation-dots:hover {
+    color: #fe5a1a; }
+  .slider-navigation-dots:active {
+    color: #fe5a1a; }
+  .slider-navigation-dots:focus {
+    color: #fe5a1a; }
+  .slider-navigation-dots:focus-within {
+    color: #fe5a1a; }
+
+.button-navigation {
+  margin-bottom: 5px; }
+
+.fa-chevron-left {
+  font-size: 30px; }
+
+.fa-chevron-right {
+  font-size: 30px; }
+
+.content {
+  height: 2305px; }
+
+.product {
+  flex-wrap: wrap;
+  height: 960px; }
+
+.product-title {
+  margin-left: 60px;
+  margin-top: 60px; }
+
+.product-title_dark {
+  color: white; }
+
+.product-title_light {
+  color: #222222; }
+
+.product-watches {
+  height: 480px;
+  width: 33%; }
+
+.product-watches_color {
+  background-color: white;
+  background-image: url(../photo/smart-watch.jpg);
+  background-position: 90% 70%;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+.product-trackers {
+  height: 480px;
+  width: 33%; }
+
+.product-trackers_color {
+  background-color: #26386b;
+  background-image: url(../photo/tracker.png);
+  background-position: 90% 70%;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+.product-headphones {
+  height: 480px;
+  width: 66%;
+  margin-top: -480px; }
+
+.product-headphones_color {
+  background-color: #3bc7f5;
+  background-image: url(../photo/headphones.png);
+  background-position: 90% 70%;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+.product-earphones {
+  height: 960px;
+  width: 34%; }
+
+.product-earphones_color {
+  background-color: #ff7c2b;
+  background-image: url(../photo/earphones.png);
+  background-position: 90% 70%;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+.product-items {
+  height: 960px;
+  flex-wrap: wrap; }
+
+.product-item {
+  height: 480px;
+  width: 25%; }
+
+.item-not-even {
+  background-color: #f9f9f9; }
+
+.item-even {
+  background-color: #eeeeee; }
+
+.item-img {
+  background-image: url(../photo/earphones.png);
+  background-position: 90% 70%;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+.addition-inform {
+  justify-content: space-between;
+  height: 385px;
+  background-color: #f9f9f9; }
+
+.addition-inform-item {
+  height: 385px;
+  width: 33%;
+  background: white;
+  justify-content: center;
+  align-items: center; }
+
+.inform-item-img {
+  font-size: 34px;
+  color: #e7e7e7; }
+
+.item-text {
+  color: #808080;
+  text-align: center; }
+
+.inform-item-link {
+  text-decoration: none;
+  color: #fe5a1a; }
+
+.footer {
+  justify-content: space-between;
+  background: #161616;
+  height: 470px; }
+
+.footer-item {
+  height: 350px;
+  margin-top: 95px;
+  padding: 0%; }
+
+.footer-logo {
+  justify-content: space-between; }
+
+.form-footer {
+  width: 35%;
+  align-items: flex-start; }
+
+.footer-title {
+  color: white; }
+
+.footer-text {
+  color: #808080; }
+
+.form {
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px; }
+
+.form-field {
+  width: 80%;
+  height: 39px; }
+
+.form-button {
+  width: 20%;
+  height: 45px; }
+
+.button-group {
+  margin-top: 30px;
+  margin-right: 10px; }
+
+.button-circle {
+  border: none;
+  background: #333333;
+  border-radius: 30px;
+  height: 60px;
+  width: 60px;
+  margin-right: 10px; }
+
+.button-img {
+  font-size: 15pt;
   color: white; }

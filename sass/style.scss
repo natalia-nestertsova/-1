@@ -1,13 +1,37 @@
 $main-color: #fe5a1a;
-$footer-cilor:#222222;
+$footer-color:#161616;
 $nav-menu-color:#777777;
 $add-color:#e7e7e7;
+$nav-menu-active-color: #333333;
+
+
 
 $logo-color: white;
 $nav-bacground-color: white;
 
+$icon-color: #fe5a1a;
+
 $header-slidebar-color: #aabff8;
 $title-name_color:white;
+$dots-color: white;
+$dots-color-active:#777777;
+$arrow-color: white;
+$arrow-color-active:#fe5a1a;
+
+$product-watches-color:white;
+$product-trackers-color:#26386b;
+$product-headphones-color:#3bc7f5;
+$product-earphones-color:#ff7c2b;
+$product-title-color-dark:white;
+$product-title-color-light:#222222;
+
+$item-not-even-color:#f9f9f9;
+$item-even-color:#eeeeee;
+
+$addition-inform-color:white;
+$inform-item-img-color: #e7e7e7;
+$inform-item-text-color: #808080;
+$button-circle:#333333;
 
 %flex-column{
     display: flex;
@@ -77,9 +101,12 @@ body{
 }
 .nav-item{
     list-style-type: none;
-    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 700;
+}
+.nav-item_view{
     text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    cursor: pointer;
 }
 
 .nav-item_position{
@@ -88,149 +115,402 @@ body{
 }
 .nav-item_nav-color{
     color: $nav-menu-color;
+    &:hover{
+        color: $footer-color;
+    }
+    &:focus{
+        color: $footer-color;
+    }
+    &:active{
+        color: $footer-color;
+    }
+    &:focus-within{
+        color: $footer-color;
+    }
 }
-.nav-item_nav-color:active{
-    color: $footer-cilor;
-}
-.nav-item_nav-color:focus{
-    color: $footer-cilor;
-}
-.nav-item_nav-color:hover{
-    color: $footer-cilor;
-}
-.nav-item_nav-color:focus-within{
-    color: $footer-cilor;
-}
+
 .nav-item_main-color{
     color: $main-color;
-}
-.nav-item_main-color:active{
-    color: $footer-cilor;
-}
-.nav-item_main-color:focus{
-    color: $footer-cilor;
-}
-.nav-item_main-color:focus-within{
-    color: $footer-cilor;
-}
-.nav-item_main-color:hover{
-    color: $footer-cilor;
+    &:hover{
+        color: $footer-color;
+    }
+    &:focus{
+        color: $footer-color;
+    }
+    &:active{
+        color: $footer-color;
+    }
+    &:focus-within{
+        color: $footer-color;
+    }
 }
 
 // startind button down added menu
-.nav-item-down-img-size{
-    width: 10px;
-    height: 10px;
+.nav-item-down-img-color{
+    color:$nav-menu-color;
+    &:hover{
+        color:$nav-menu-active-color;
+    }
 }
 .nav-item-down-img-position{
     @extend %flex-row;
     justify-content: center;
     margin-left: 20px;
-    margin-top: 5px;
-}
-.nav-item-down-img {
-    background-image: url(../photo/iconsDown.png);
+    margin-top: 3px;
 }
 
-.nav-item-down-img:active {
-    background-image: url(../photo/iconsDownActive.png);
-}
-
-.nav-item-down-img:hover {
-    background-image: url(../photo/iconsDownActive.png);
-}
-
-.nav-item-down-img:focus-within {
-    background-image: url(../photo/iconsDownActive.png);
-}
-
-.nav-item-down-img:focus {
-    background-image: url(../photo/iconsDownActive.png);
-    border: $main-color;
-}
 
 // FInishing menu
 // Starting nav icons
-.adding-nav-icon{
+.adding-nav-icon {
     @extend %flex-row;
     align-items: center;
     right: 15px;
 }
-.nav-icon{
-    height: 25px;
-    width: 25px;
-    margin-right: 15px;
 
+.nav-icon {
+    height: 20px;
+    width: 23px;
+    margin-right: 15px;
+    cursor: pointer;
+    
 }
-.icon-search{
-    background: url(../photo/icons-search-red.png);
-}
-.icon-pearson{
-    background: url(../photo/icons-person-red.png);
-}
-.icon-basket{
-    background: url(../photo/icons-basket-red.png);
-}
-.icon-settings{
-    background: url(../photo/icons-settings-light-gray.png);
+
+.nav-icon-color {
+    color: $icon-color;
+    &:hover{
+        color:$nav-menu-active-color;
+    }
 }
 // finishing nav icons
 
 
 // Starting slidebar
-.slidebar{
+.slidebar {
     height: 960px;
     background-color: $header-slidebar-color;
+    background-image: url(../photo/WirelessSpeaker_Bottle.png);
+    background-repeat: no-repeat;
+    background-position: 70% center;
 }
-.titles-product{
-width: 430px;
-height: 350px;
+
+.slidebar_content-align{
+    @extend %flex-row;
+    justify-content: space-between;
 }
-.title-name{
+
+// title starting
+.titles-product {
     font-family: 'Source Sans Pro', sans-serif;
+    color: $title-name_color;
+
+}
+.titles-product_size{
+    width: 430px;
+    margin-left: 50px;
+}
+
+.titles-product_position {
+    @extend %flex-column;
+    justify-content: center;
+}
+
+.title-name {
     font-size: 60px;
+    line-height: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
-.title-name_color{
-    color: $title-name_color;
 
-}
 .title-prise{
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 40px;
+    font-size: 55px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
-.title-prise_color{
-    color: $title-name_color;
-}
-.description-text{
-    font-family: 'Source Sans Pro', sans-serif;
-}
-.description-text_color{
-    color: $title-name_color;
-}
-.buy-button{
 
+.buy-button {
+    border: 4px solid;
+    border-radius: 50px;
+    border-color: $title-name_color;
+    background-color: $header-slidebar-color;
+    cursor: pointer;
+}
+.buy-button_position{
+    @extend %flex-column;
+    justify-content: center;
+    align-items: center;
+}
+.buy-button_size {
+    height: 100px;
+    width: 100px;
 }
 .buy-button-img{
-
+    font-size: 30pt;
+    color: $title-name_color;
+    &:hover{
+        color:$nav-menu-active-color;
+    }
+    &:focus{
+        color:$nav-menu-active-color;
+    }
 }
-.dots{
-
+// title fin
+// navigation st
+.slider-navigation {
+    @extend %flex-row;
+    align-items: flex-end;
+    color:$dots-color;
+    // &:hover{
+    //     color:$arrow-color-active;
+    // }
+    // &:active{
+    //     color:$arrow-color-active;
+    // }
+    // &:focus{
+    //     color:$arrow-color-active;
+    // }
+    // &:focus-within{
+    //     color:$arrow-color-active;
+    // }
+    
 }
-.button-navigation{
-
+.slider-navigation_size{
+    width: 200px;;
+    margin-bottom: 80px;
 }
+.slider-navigation-dots{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 60px;
+    margin-right: 4px;
+    &:hover{
+        color:$arrow-color-active;
+    }
+    &:active{
+        color:$arrow-color-active;
+    }
+    &:focus{
+        color:$arrow-color-active;
+    }
+    &:focus-within{
+        color:$arrow-color-active;
+    }
+ }
+//  .slider-navigation-dots_color{
+//      color:$dots-color;
+//  }
+//  .slider-navigation-dots_color:active{
+//     color:$dots-color-active;
+// }
+
+.button-navigation {
+    margin-bottom: 5px;
+}
+.fa-chevron-left{
+    font-size: 30px;
+}
+.fa-chevron-right{
+    font-size: 30px;
+}
+
+// Navigation fin
 // finishing slidebar
 
 // Fihishing header
-.content{
-
+// stating content
+.content {
+    @extend %flex-column;
+    height: 2305px;
 }
-.product{
-
+// main product starting
+.product {
+    @extend %flex-row;
+    flex-wrap: wrap;
+    height: 960px;
 }
+// TItles st
+.product-title{
+    margin-left: 60px;
+    margin-top: 60px;
+}
+.product-title_dark {
+    color: $product-title-color-dark;
+}
+
+.product-title_light {
+    color: $product-title-color-light;
+}
+// titles fin
+
+// products st
+.product-watches {
+    height: 480px;
+    width: 33%;
+}
+
+.product-watches_color {
+    background-color: $product-watches-color;
+    background-image: url(../photo/smart-watch.jpg);
+    background-position: 90% 70%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.product-trackers {
+    height: 480px;
+    width: 33%;
+}
+
+.product-trackers_color{
+    background-color: $product-trackers-color;
+    background-image: url(../photo/tracker.png);
+    background-position: 90% 70%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.product-headphones {
+    height: 480px;
+    width: 66%;
+    margin-top: -480px;
+    
+}
+
+.product-headphones_color{
+    background-color: $product-headphones-color;
+    background-image: url(../photo/headphones.png);
+    background-position: 90% 70%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.product-earphones {
+    height: 960px;
+    width: 34%;
+    
+}
+ 
+.product-earphones_color{
+    background-color: $product-earphones-color;
+    background-image: url(../photo/earphones.png);
+    background-position: 90% 70%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.product-items{
+    @extend %flex-row;
+    height: 960px;
+    flex-wrap: wrap;
+}
+
+.product-item{
+    height:480px;
+    width: 25%;
+}
+.item-not-even{
+    background-color:$item-not-even-color;
+}
+.item-even{
+    background-color:$item-even-color;
+}
+.item-img{
+    background-image: url(../photo/earphones.png);
+    background-position: 90% 70%;
+    background-repeat: no-repeat;
+    background-size: contain; 
+}
+
+// products fin
+// add information start
+
 .addition-inform{
-
+    @extend %flex-row;
+    justify-content: space-between;
+    height: 385px;
+    
+    background-color: $item-not-even-color;
 }
-.footer{
+.addition-inform-item{
+    @extend %flex-column;
+    height: 385px;
+    width: 33%;
+    background: $addition-inform-color;
+    justify-content: center;
+    align-items: center;
+}
+.inform-item-img{
+    font-size: 34px;
+    color: $inform-item-img-color;
+}
 
+.item-text{
+    color: $inform-item-text-color;
+    text-align: center;
+}
+.inform-item-link{
+    text-decoration: none;
+    color: $main-color;
+}
+
+
+// add information finish
+// footer start
+.footer {
+    @extend %flex-row;
+    justify-content: space-between;
+    background: $footer-color;
+    height: 470px;
+}
+.footer-item{
+    height: 350px;
+    margin-top: 95px;
+    padding: 0%;
+}
+ .footer-logo{
+     @extend %flex-column;
+     justify-content: space-between;
+    
+}
+.form-footer{
+    width: 35%;
+    @extend %flex-column;
+    align-items: flex-start;
+}
+.footer-title{
+    color: $logo-color;
+}
+.footer-text{
+    color: $inform-item-text-color;
+}
+.form{
+    width: 90%;
+    @extend %flex-row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.form-field{
+    width: 80%;
+    height: 39px;
+}
+.form-button{
+    width: 20%;
+    height: 45px;
+}
+.button-group{
+    margin-top: 30px;
+    margin-right: 10px;
+}
+.button-circle{
+    border: none;
+    background: $button-circle;
+    border-radius: 30px;
+    height: 60px;
+    width: 60px;
+    margin-right: 10px;
+}
+.button-img{
+    font-size: 15pt;
+    color: $logo-color;
 }
