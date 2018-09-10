@@ -4,8 +4,6 @@ $nav-menu-color:#777777;
 $add-color:#e7e7e7;
 $nav-menu-active-color: #333333;
 
-
-
 $logo-color: white;
 $nav-bacground-color: white;
 
@@ -32,6 +30,7 @@ $addition-inform-color:white;
 $inform-item-img-color: #e7e7e7;
 $inform-item-text-color: #808080;
 $button-circle:#333333;
+$footer-link-color:white;
 
 %flex-column{
     display: flex;
@@ -101,12 +100,13 @@ body{
 }
 .nav-item{
     list-style-type: none;
-    font-weight: 700;
+    
 }
 .nav-item_view{
     text-transform: uppercase;
     font-family: 'Source Sans Pro', sans-serif;
     cursor: pointer;
+    font-weight: 700;
 }
 
 .nav-item_position{
@@ -234,6 +234,21 @@ body{
     border-color: $title-name_color;
     background-color: $header-slidebar-color;
     cursor: pointer;
+    // &:hover{
+    //      border-color:$nav-menu-active-color;
+    // }
+    // &:focus{
+    //      border-color:$nav-menu-active-color;
+    // }
+    // &:focus-within{
+    //      border-color:$nav-menu-active-color;
+    // }
+    // &:active{
+    //      border-color:$nav-menu-active-color;
+    // }
+}
+.buy-button-active{
+    border-color:$nav-menu-active-color;
 }
 .buy-button_position{
     @extend %flex-column;
@@ -247,12 +262,21 @@ body{
 .buy-button-img{
     font-size: 30pt;
     color: $title-name_color;
-    &:hover{
-        color:$nav-menu-active-color;
-    }
-    &:focus{
-        color:$nav-menu-active-color;
-    }
+//     &:hover{
+//         color:$nav-menu-active-color;
+//     }
+//     &:focus{
+//         color:$nav-menu-active-color;
+//     }
+//     &:focus-within{
+//         color:$nav-menu-active-color;
+//     }
+//     &:active{
+//         color:$nav-menu-active-color;
+//     }
+ }
+.buy-button-img-active{
+    color:$nav-menu-active-color;
 }
 // title fin
 // navigation st
@@ -260,18 +284,7 @@ body{
     @extend %flex-row;
     align-items: flex-end;
     color:$dots-color;
-    // &:hover{
-    //     color:$arrow-color-active;
-    // }
-    // &:active{
-    //     color:$arrow-color-active;
-    // }
-    // &:focus{
-    //     color:$arrow-color-active;
-    // }
-    // &:focus-within{
-    //     color:$arrow-color-active;
-    // }
+ 
     
 }
 .slider-navigation_size{
@@ -282,6 +295,26 @@ body{
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 60px;
     margin-right: 4px;
+    &:hover {
+        color: $dots-color-active;
+    }
+    &:active {
+        color: $dots-color-active;
+    }
+    &:focus {
+        color: $dots-color-active;
+    }
+    &:focus-within {
+        color: $dots-color-active;
+    }
+ }
+
+
+.button-navigation {
+    margin-bottom: 5px;
+}
+.fa-chevron-left{
+    font-size: 30px;
     &:hover{
         color:$arrow-color-active;
     }
@@ -294,22 +327,21 @@ body{
     &:focus-within{
         color:$arrow-color-active;
     }
- }
-//  .slider-navigation-dots_color{
-//      color:$dots-color;
-//  }
-//  .slider-navigation-dots_color:active{
-//     color:$dots-color-active;
-// }
-
-.button-navigation {
-    margin-bottom: 5px;
-}
-.fa-chevron-left{
-    font-size: 30px;
 }
 .fa-chevron-right{
     font-size: 30px;
+    &:hover{
+        color:$arrow-color-active;
+    }
+    &:active{
+        color:$arrow-color-active;
+    }
+    &:focus{
+        color:$arrow-color-active;
+    }
+    &:focus-within{
+        color:$arrow-color-active;
+    }
 }
 
 // Navigation fin
@@ -460,6 +492,7 @@ body{
     justify-content: space-between;
     background: $footer-color;
     height: 470px;
+    
 }
 .footer-item{
     height: 350px;
@@ -471,6 +504,9 @@ body{
      justify-content: space-between;
     
 }
+.footer-nav-item{
+    margin-top: 10px;
+}
 .form-footer{
     width: 35%;
     @extend %flex-column;
@@ -481,6 +517,10 @@ body{
 }
 .footer-text{
     color: $inform-item-text-color;
+}
+.footer-link{
+    text-decoration: none;
+    color: $footer-link-color;
 }
 .form{
     width: 90%;
@@ -497,6 +537,26 @@ body{
 .form-button{
     width: 20%;
     height: 45px;
+    background-color: $main-color;
+    border-color: $main-color;
+    color: $footer-link-color;
+    font-size: 12pt;
+    &:hover{
+        border-color:$nav-menu-color;
+         background-color: $nav-menu-color;
+   }
+   &:focus{
+        border-color:$nav-menu-color;
+        background-color: $nav-menu-color;
+   }
+   &:focus-within{
+        border-color:$nav-menu-color;
+         background-color: $nav-menu-color;
+   }
+   &:active{
+        border-color:$nav-menu-color;
+        background-color:$nav-menu-color;
+   }
 }
 .button-group{
     margin-top: 30px;
@@ -509,8 +569,35 @@ body{
     height: 60px;
     width: 60px;
     margin-right: 10px;
+    margin-top: 5px;
+    &:hover{
+       background: $footer-link-color;
+    }
+    &:active{
+      background: $footer-link-color;
+    }
+    &:focus{
+       background: $footer-link-color;
+    }
+    &:focus-within{
+        background: $footer-link-color;
+    }
 }
+
 .button-img{
     font-size: 15pt;
     color: $logo-color;
+    font-size: 20px;
+    &:hover{
+        color: $main-color;
+    }
+    &:active{
+        color: $main-color;
+    }
+    &:focus{
+        color: $main-color;
+    }
+    &:focus-within{
+        color: $main-color;
+    }
 }
