@@ -1,0 +1,45 @@
+.menu {
+  background-color: #fe5a1a; }
+
+.nav-item_nav-color {
+  color: white; }
+
+.nav-item-down-img-color {
+  color: white; }
+
+.nav-icon-color {
+  color: white; }
+
+.slidebar_content-align {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.button-navigation_color {
+  color: white; }
+
+.slidebar-title {
+  height: 960px; }
+
+.slidebar-navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+.titles-product_position {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.fa-chevron-left {
+  margin-left: 15px; }
+
+.fa-chevron-right {
+  margin-right: 15px; }
+
+.slider-navigation_size {
+  margin-top: -320px;
+  margin-left: 50px; }

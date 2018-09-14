@@ -36,6 +36,15 @@ body {
 
 .logo-link {
   text-decoration: none; }
+  .logo-link:focus-within {
+    text-decoration: none;
+    text-decoration-line: none; }
+  .logo-link:focus {
+    text-decoration: none;
+    text-decoration-line: none; }
+  .logo-link:hover {
+    text-decoration: none;
+    text-decoration-line: none; }
 
 .nav-menu {
   height: 80px;
@@ -141,7 +150,7 @@ body {
   border: 4px solid;
   border-radius: 50px;
   border-color: white;
-  background-color: #aabff8;
+  background-color: #aabff800;
   cursor: pointer; }
 
 .buy-button-active {
@@ -315,8 +324,12 @@ body {
   color: #fe5a1a; }
 
 .footer {
-  justify-content: space-between;
-  background: #161616;
+  justify-content: space-between; }
+
+.footer-color {
+  background: #161616; }
+
+.footer-size {
   height: 470px; }
 
 .footer-item {
@@ -348,7 +361,8 @@ body {
   width: 90%;
   justify-content: center;
   align-items: center;
-  margin-top: 30px; }
+  margin-top: 30px;
+  margin-bottom: 30px; }
 
 .form-field {
   width: 80%;
@@ -375,7 +389,6 @@ body {
     background-color: #777777; }
 
 .button-group {
-  margin-top: 30px;
   margin-right: 10px; }
 
 .button-circle {
@@ -394,16 +407,27 @@ body {
     background: white; }
   .button-circle:focus-within {
     background: white; }
+  .button-circle .button-img {
+    font-size: 15pt;
+    color: white;
+    font-size: 20px; }
+    .button-circle .button-img:hover {
+      color: #fe5a1a; }
+    .button-circle .button-img:active {
+      color: #fe5a1a; }
+    .button-circle .button-img:focus {
+      color: #fe5a1a; }
+    .button-circle .button-img:focus-within {
+      color: #fe5a1a; }
 
-.button-img {
-  font-size: 15pt;
-  color: white;
-  font-size: 20px; }
-  .button-img:hover {
-    color: #fe5a1a; }
-  .button-img:active {
-    color: #fe5a1a; }
-  .button-img:focus {
-    color: #fe5a1a; }
-  .button-img:focus-within {
-    color: #fe5a1a; }
+.container-fluid {
+  width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: 0;
+  margin-left: 0; }
+
+.row {
+  width: 100%;
+  margin-right: 0;
+  margin-left: 0; }
