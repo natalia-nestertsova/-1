@@ -1,19 +1,16 @@
-$red-color: #fe5a1a;
-$white: white;
-
 
 @import "colors.scss";
 .menu{
-    background-color: $red-color;
+    background-color: $color-orange;
 }
 .nav-item_nav-color{
-    color: $white;
+    color: $color-white;
 }
 .nav-item-down-img-color{
-    color: $white;
+    color: $color-white;
 }
 .nav-icon-color{
-    color: $white;
+    color: $color-white;
 }
 .slidebar_content-align{
     display: flex;
@@ -24,7 +21,7 @@ $white: white;
 
 .slidebar-title{
     height: 960px;
-    color: $white;
+    color: $color-white;
 }
 .slidebar-navigation{
     display: flex;
@@ -53,3 +50,4 @@ $white: white;
     background-color: $header-color2;
     background-image: none;
 }
+

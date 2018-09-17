@@ -1,37 +1,5 @@
-$main-color: #fe5a1a;
-$footer-color:#161616;
-$nav-menu-color:#777777;
-$add-color:#e7e7e7;
-$nav-menu-active-color: #333333;
 
-$logo-color: white;
-$nav-bacground-color: white;
-
-$icon-color: #fe5a1a;
-
-$header-slidebar-color: #aabff8;
-$header-slidebar-color-button:#aabff800;
-$title-name_color:white;
-$dots-color: white;
-$dots-color-active:#777777;
-$arrow-color: white;
-$arrow-color-active:#fe5a1a;
-
-$product-watches-color:white;
-$product-trackers-color:#26386b;
-$product-headphones-color:#3bc7f5;
-$product-earphones-color:#ff7c2b;
-$product-title-color-dark:white;
-$product-title-color-light:#222222;
-
-$item-not-even-color:#f9f9f9;
-$item-even-color:#eeeeee;
-
-$addition-inform-color:white;
-$inform-item-img-color: #e7e7e7;
-$inform-item-text-color: #808080;
-$button-circle:#333333;
-$footer-link-color:white;
+@import "colors.scss";
 
 %flex-column{
     display: flex;
@@ -202,7 +170,7 @@ body{
 // Starting slidebar
 .slidebar {
     height: 960px;
-    background-color: $header-slidebar-color;
+    background-color: $header-color5;
     background-image: url(../photo/WirelessSpeaker_Bottle.png);
     background-repeat: no-repeat;
     background-position: 70% center;
@@ -611,4 +579,10 @@ body{
     margin-right: 0;
     margin-left: 0;
 
+}
+
+
+// ACTIVES
+.button-navigation_active{
+color: $color-orange;
 }

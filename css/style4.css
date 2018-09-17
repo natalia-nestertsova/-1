@@ -1,6 +1,3 @@
-.white-color {
-  color: white; }
-
 .nav {
   margin-right: 15px;
   margin-left: 15px; }
@@ -30,15 +27,13 @@
   text-decoration: none; }
 
 .slidebar {
-  height: 960px;
-  background-color: #16161e;
-  background-image: url(../photo/WirelessSpeaker_Bottle.png);
-  background-repeat: no-repeat;
-  background-position: 70% center; }
+  background-color: #eeeeee; }
 
-.product-line {
-  width: 100%;
-  height: 480px; }
+.buy-button-img {
+  color: #fe5b1a; }
+
+.buy-button {
+  border-color: #fe5b1a; }
 
 .second-footer {
   background-color: #0d0d0d;
@@ -47,3 +42,11 @@
 
 .payment {
   font-size: 24pt; }
+
+.store-wrap {
+  height: 200px; }
+  .store-wrap img {
+    height: 50%; }
+
+.store-name {
+  opacity: 0.3; }
